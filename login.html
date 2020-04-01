@@ -7,6 +7,15 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link href="login.css" rel="stylesheet">
+
+    <style>
+        @media (min-width: 992px) {
+            .pl-lg-5, .px-lg-5 {
+                padding-left: 3rem !important;
+                padding-top: 1rem !important;
+            }
+        }
+    </style>
 </head>
 <body class="text-center">
   <!--   <form class="form-signin">
@@ -28,8 +37,8 @@
     <div class="header-body text-center mb-7">
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6">
-          <h1 class="text-white">Welcome!</h1>
-          <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p>
+          <h1 class="text-white">Добро пожаловать!</h1>
+          <p class="text-lead text-light">Пожалуйста используйте эту форму, что зайти через свой аккаунт или зарегистрироваться бесплатно.</p>
         </div>
       </div>
     </div>
@@ -42,7 +51,7 @@
         <div class="col-lg-5 col-md-7">
           <div class="card bg-secondary shadow border-0">
             <div class="card-header bg-transparent pb-5">
-              <div class="text-muted text-center mt-2 mb-3"><small>Sign in with</small></div>
+              <div class="text-muted text-center mt-2 mb-3"><small>Вход через</small></div>
               <div class="btn-wrapper text-center">
                 <a href="#" class="btn btn-neutral btn-icon mr-4">
                   <span class="btn-inner--icon"><img src="../static/img/icons/facebook.svg"></span>
@@ -55,15 +64,15 @@
               </div>
             </div>
             <div class="card-body px-lg-5 py-lg-5">
-              <div class="text-center text-muted mb-4">
-                <small>Or sign in with credentials</small>
+               <div class="text-center text-muted mb-4">
+                <small>Вход</small>
                 <br>
                 <small>
-                  You can use <strong>admin@argon.com</strong> and <strong>secret</strong> to login
+                  <strong>Это тест версия</strong>  <!-- <strong>admin@argon.com</strong> and <strong>secret</strong> to login -->
                 </small>
               </div>
               
-              <form role="form" action="/login" method="POST">
+              <form role="form" action="./projects.html" method="POST">
                 
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
@@ -88,21 +97,23 @@
                 <div class="custom-control custom-control-alternative custom-checkbox">
                   <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
                   <label class="custom-control-label" for=" customCheckLogin">
-                    <span class="text-muted">Remember me</span>
+                    <span class="text-muted">Запомнить меня</span>
                   </label>
                 </div>
                 <div class="text-center">
-                  <button class="btn btn-primary my-4">Sign in</button>
+                  <button class="btn btn-primary my-4">
+                      <a href="./projects.html" class="text-light">Зайти</a>
+                  </button>
                 </div>
               </form>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-6 text-left-need">
-              <a href="/reset-password" class="text-light"><small>Forgot password?</small></a>
+              <a href="./reset-password" class="text-light"><small>Забыл пароль?</small></a>
             </div>
             <div class="col-6 text-right">
-              <a href="/register" class="text-light"><small>Create new account</small></a>
+              <a href="./register.html" class="text-light"><small>Зарегистрироваться</small></a>
             </div>
           </div>
         </div>
